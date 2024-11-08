@@ -2,6 +2,12 @@
 
 This project is a simple, responsive sign-up form built with React, using `react-hook-form` for form validation and Tailwind CSS for styling. It provides a minimalistic and clean UI for users to enter their information and claim a free trial.
 
+## Demo
+
+You can see the live demo of this project by clicking the link below:
+
+[Live Demo](https://candid-bienenstitch-7c445c.netlify.app)
+
 ## Features
 
 - **Responsive Layout**: The form and surrounding elements adjust to different screen sizes, providing an optimal user experience on both desktop and mobile devices.
