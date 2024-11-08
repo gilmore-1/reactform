@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
+# Responsive Sign-Up Form with React & Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple, responsive sign-up form built with React, using `react-hook-form` for form validation and Tailwind CSS for styling. It provides a minimalistic and clean UI for users to enter their information and claim a free trial.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Layout**: The form and surrounding elements adjust to different screen sizes, providing an optimal user experience on both desktop and mobile devices.
+- **Form Validation**: `react-hook-form` is used to handle form validation, ensuring required fields are filled and displaying error messages if they are not.
+- **Custom Styling**: Tailwind CSS classes are used throughout, giving the form a modern look with custom colors, spacing, and font styling.
+- **Error Handling**: Error messages display dynamically below each input if the user submits incomplete information.
 
-## Expanding the ESLint configuration
+## Components
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Username, Lastname, Email, Password Fields**: Basic input fields with real-time validation. Email and password have additional validation rules to ensure they meet required formats and lengths.
+- **Submit Button**: A prominent button for users to claim their free trial, which handles submission via `onSubmit` handler.
+- **Terms and Services Link**: A small footer message with a link to Terms and Services, styled to match the form.
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. **Install Dependencies**: Run `npm install` to install all required packages.
+2. **Run the App**: Use `npm start` to start the development server.
+3. **Customize**: Adjust form fields or validation rules within the `Inputs` type or `register` methods as needed.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **React**
+- **react-hook-form**
+- **Tailwind CSS**
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## License
+
+Feel free to use and modify this code.
