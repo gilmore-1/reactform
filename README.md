@@ -6,7 +6,7 @@ This project is a simple, responsive sign-up form built with React, using `react
 
 You can see the live demo of this project by clicking the link below:
 
-[Live Demo](https://candid-bienenstitch-7c445c.netlify.app)
+[Live Demo](https://legendary-macaron-5dd765.netlify.app/)
 
 ## Features
 
